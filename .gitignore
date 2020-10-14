@@ -1,0 +1,11 @@
+# Ignore everything
+/*
+
+# Except
+!*.md
+!*.pdf
+!img
+!.gitignore
+
+!root_project
+/**/__pycache__
