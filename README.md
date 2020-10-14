@@ -58,7 +58,8 @@ docstrings en uno de los formatos que _Sphinx_ entiende: Google, NumPy/SciPy,
 reStructuredText o Epytext. Acá veremos brevemente un ejemplo de estos formatos.
 
 ![img](img/ds_formats.png "docsting formats")
-Tabla y ejemplos a continucaión tomados de [Real Python: Documenting Python Code: A Complete Guide][1].
+
+*Tabla y ejemplos a continuación tomados de [Real Python: Documenting Python Code: A Complete Guide][1].
 
 ### Google docstrings
 
@@ -340,7 +341,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 
 En ``conf.py`` también podemos configurar las extensiones disponibles, que se
 pueden consultar en [este sitio][9]. En nuestro caso hay dos extensiones que
-son importantes y debemos usar: 
+son importantes y debemos usar:
 
 * ``sphinx.ext.autodoc``: nos permitirá crear la documentación
   automáticamente a partir de los docstrings que escribimos en nuestro código
@@ -541,6 +542,7 @@ root_project/
 │   │        ├── py-modindex.html
 │   │        ├── search.html
 │   │        └── searchindex.js
+│   ├── Makefile
 │   ├── make.bat
 │   └── source
 │       ├── _static
@@ -552,14 +554,8 @@ root_project/
 │       └── project.rst
 └── project
     ├── __init__.py
-    ├── __pycache__
-    │   ├── __init__.cpython-36.pyc
-    │   └── numpy_docstring_example.cpython-36.pyc
     ├── my_subpackage
     │   ├── __init__.py
-    │   ├── __pycache__
-    │   │   ├── __init__.cpython-36.pyc
-    │   │   └── numpy_docstring_example.cpython-36.pyc
     │   └── numpy_docstring_example.py
     └── numpy_docstring_example.py
 ```
@@ -574,14 +570,14 @@ $ open ./build/html/index.html
 
 ## Recap
 
-En este punto ya hemos visto:
+En este tutorial revisamos:
 
 * cómo se construyen docstrings de Pyhton,
 * diferentes tipos de docstrings de Python,
-* una introducción a reStructuredText,
+* una brevísima introducción de reStructuredText,
 * cómo estructurar un proyecto de python con documentación,
-* cómo configurar Sphinx para que lea nuestros docstrings y documente automáticamente nuestro
-  proyecto.
+* cómo configurar Sphinx para que lea nuestros docstrings y documente
+  automáticamente nuestro proyecto.
 
 Esto es lo básico para comenzar a documentar formalmente nuestros proyectos de
 Python, pero las posibilidades de personalización son muchas y la práctica es
@@ -590,7 +586,7 @@ la que nos permite apoderarnos de este tipo de herramientas.
 Para practicar, podemos crear nuestro propio paquete de python, que tenga uno o
 dos subpaquetes y varios módulos dentro de cada uno de ellos, escribir los
 docstrings de las funciones y las clases y generar la documentación con Sphinx.
-Para practicar esto no es necesario que el código sea funcional, pero si lo es,
+Para practicar esto no es necesario que el código sea funcional –pero si lo es,
 mucho mejor!
 
 ## Referencias
